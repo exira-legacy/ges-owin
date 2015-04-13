@@ -1,0 +1,23 @@
+type project
+owners
+    exira
+authors 
+    exira
+projectUrl
+    http://github.com/exira/Exira.EventStore.Owin
+iconUrl
+    https://raw.githubusercontent.com/exira/Exira.EventStore.Owin/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/exira/Exira.EventStore.Owin/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    eventstore ges owin f#
+summary
+    Exira.EventStore.Owin is an OWIN middleware to keep an EventStore connection shared per application
+description
+    Exira.EventStore.Owin is an OWIN middleware to keep an EventStore connection shared per application
+
+
