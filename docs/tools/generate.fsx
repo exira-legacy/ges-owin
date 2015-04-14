@@ -11,13 +11,13 @@
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
 // Web site location for the generated documentation
-let website = "/Exira.EventStore.Owin"
+let website = "/ges-owin"
 
-let githubLink = "http://github.com/exira/Exira.EventStore.Owin"
+let githubLink = "http://github.com/exira/ges-owin"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "Exira.EventStore.Owin"
+  [ "project-name", "ges-owin"
     "project-author", "exira"
     "project-summary", "Exira.EventStore.Owin is an OWIN middleware to keep an EventStore connection shared per application"
     "project-github", githubLink
