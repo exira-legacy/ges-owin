@@ -1,5 +1,5 @@
 (*** hide ***)
-// This block of code is omitted in the generated HTML documentation. Use 
+// This block of code is omitted in the generated HTML documentation. Use
 // it to define helpers that you do not want to show in the documentation.
 #I "../../bin"
 
@@ -7,13 +7,11 @@
 ges-owin
 ======================
 
-Documentation
-
 <div class="row">
   <div class="span1"></div>
   <div class="span6">
     <div class="well well-small" id="nuget">
-      The ges library can be <a href="https://nuget.org/packages/Exira.EventStore.Owin">installed from NuGet</a>:
+      The ges-owin library can be <a href="https://nuget.org/packages/Exira.EventStore.Owin">installed from NuGet</a>:
       <pre>PM> Install-Package Exira.EventStore.Owin</pre>
     </div>
   </div>
