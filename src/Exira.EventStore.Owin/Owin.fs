@@ -24,6 +24,8 @@ type EventStoreOptions() =
             Port = defaultPort
             Username = "admin"
             Password = "changeit"
+            UseSsl = false
+            TargetHost = String.Empty
         }
 
     member val Configuration = defaultConfiguration with get, set
