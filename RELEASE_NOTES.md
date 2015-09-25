@@ -1,3 +1,8 @@
+#### 0.0.5 - September 26 2015
+* Upgrade dependencies
+* Use F# 4.0
+* Target .NET Framework 4.6
+
 #### 0.0.4 - July 04 2015
 * Upgrade dependencies
 
