@@ -11,29 +11,14 @@ open Exira.EventStore
 open Exira.EventStore.EventStore
 
 type EventStoreOptions() =
-    let defaultPort =
-        1113
-        |> ServerPort.create
-        |> function
-            | Some defaultPort -> defaultPort
-            | None -> failwith "Default port is incorrect."
+    let defaultConnectionString = "tcp://admin:changeit@127.0.0.1:1113"
 
-    let defaultConfiguration =
-        {
-            Address = IPAddress.Parse("127.0.0.1")
-            Port = defaultPort
-            Username = "admin"
-            Password = "changeit"
-            UseSsl = false
-            TargetHost = String.Empty
-        }
-
-    member val Configuration = defaultConfiguration with get, set
+    member val ConnectionString = defaultConnectionString with get, set
 
 type EventStoreMiddleware(next: Func<IDictionary<string, obj>, Task>, options: EventStoreOptions) =
     let awaitTask = Async.AwaitIAsyncResult >> Async.Ignore
 
-    let es = connect options.Configuration |> Async.RunSynchronously
+    let es = connect options.ConnectionString |> Async.RunSynchronously
 
     let updateOrAdd key value (dict: dict<'Key, 'T>) =
         lock dict <| fun () -> dict.[key] <- value
@@ -42,7 +27,7 @@ type EventStoreMiddleware(next: Func<IDictionary<string, obj>, Task>, options: E
     member this.Invoke (environment: IDictionary<string, obj>) =
         let updatedEnvironment =
             environment
-            |> updateOrAdd "ges.configuration" (options.Configuration :> obj)
+            |> updateOrAdd "ges.connectionString" (options.ConnectionString :> obj)
             |> updateOrAdd "ges.connection" (es :> obj)
 
         async {
