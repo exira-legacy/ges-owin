@@ -11,7 +11,7 @@ open Exira.EventStore
 open Exira.EventStore.EventStore
 
 type EventStoreOptions() =
-    let defaultConnectionString = "tcp://admin:changeit@127.0.0.1:1113"
+    let defaultConnectionString = "ConnectTo=tcp://admin:changeit@127.0.0.1:1113"
 
     member val ConnectionString = defaultConnectionString with get, set
 
