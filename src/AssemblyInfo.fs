@@ -4,10 +4,10 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("Exira.EventStore.Owin")>]
 [<assembly: AssemblyProductAttribute("Exira.EventStore.Owin")>]
 [<assembly: AssemblyDescriptionAttribute("Exira.EventStore.Owin is an OWIN middleware to keep an EventStore connection shared per application")>]
-[<assembly: AssemblyVersionAttribute("0.3.0")>]
-[<assembly: AssemblyFileVersionAttribute("0.3.0")>]
-[<assembly: AssemblyMetadataAttribute("githash","009c321b0bf980acd4b0f779af68803204f6454a")>]
+[<assembly: AssemblyVersionAttribute("0.3.12")>]
+[<assembly: AssemblyFileVersionAttribute("0.3.12")>]
+[<assembly: AssemblyMetadataAttribute("githash","10fc7184b1da3357421675ff4ac0d45c0155a767")>]
 do ()
 
 module internal AssemblyVersionInformation =
-    let [<Literal>] Version = "0.3.0"
+    let [<Literal>] Version = "0.3.12"
