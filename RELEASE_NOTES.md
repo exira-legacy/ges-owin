@@ -1,3 +1,6 @@
+#### 0.4 - December 29 2015
+* NuGet package is now targeting .NET 4.6.1
+
 #### 0.3 - November 15 2015
 * NuGet package is now targeting .NET 4.5, 4.5.2 and 4.6
 
